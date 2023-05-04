@@ -1,0 +1,7 @@
+"Definiciones donde gestionamos los votos, añadiendo, modificando o borrando"
+type Mutation {
+    "Acción de añadir votos de un personaje"
+    addVote(
+        "Identificador del personaje al que se quiere emitir un voto"
+        character: ID!): Vote!
+}
